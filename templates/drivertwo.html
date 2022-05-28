@@ -41,22 +41,22 @@
                     </div>
                     <div class="col-md-7 col-md-pull-5">
                         <div class="booking-form">
-                            <form>
+                            <form action="/drivertwo" enctype="multipart/form-data" method=post>
                                 <div class="form-group">
                                     <span class="form-label">Name</span>
-                                    <input class="form-control" type="text" placeholder="Name of the Driver">
+                                    <input class="form-control" name="namam" type="text" placeholder="Name of the Driver">
                                 </div>
                                 <div class="form-group">
                                     <span class="form-label">Phone Number</span>
-                                    <input class="form-control" type="text" placeholder="Enter Your Number">
+                                    <input class="form-control" name="number" type="number" placeholder="Enter Your Number">
                                 </div>
                                 <div class="form-group">
                                     <span class="form-label">From</span>
-                                    <input class="form-control" type="text" placeholder="Enter from where you are starting">
+                                    <input class="form-control" name="source" type="text" placeholder="Enter from where you are starting">
                                 </div>
                                 <div class="form-group">
                                     <span class="form-label">To</span>
-                                    <input class="form-control" type="text" placeholder="Enter your destination">
+                                    <input class="form-control" name="dest" type="text" placeholder="Enter your destination">
                                 </div>
 
                                 <div class="row">
@@ -99,6 +99,11 @@
                 </div>
             </div>
         </div>
+
+        <h4>
+          {{msg}}
+        </h4>
+
 </body>
 <!-- This templates was made by Colorlib (https://colorlib.com) -->
 
